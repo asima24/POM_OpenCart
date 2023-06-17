@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="10" passed="9">
+  <reporter-output>
+  </reporter-output>
+  <suite name="open_cart_regression" duration-ms="26500" started-at="2023-05-26T07:04:22 EDT" finished-at="2023-05-26T07:04:48 EDT">
+    <groups>
+    </groups>
+    <test name="SearchTest" duration-ms="26500" started-at="2023-05-26T07:04:22 EDT" finished-at="2023-05-26T07:04:48 EDT">
+      <class name="com.qa.opencart.tests.SearchTest">
+        <test-method status="PASS" signature="setUP(java.lang.String)[pri:0, instance:com.qa.opencart.tests.SearchTest@49993335]" name="setUP" is-config="true" duration-ms="6047" started-at="2023-05-26T07:04:22 EDT" finished-at="2023-05-26T07:04:28 EDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUP -->
+        <test-method status="PASS" signature="searchSetup()[pri:0, instance:com.qa.opencart.tests.SearchTest@49993335]" name="searchSetup" is-config="true" duration-ms="1103" started-at="2023-05-26T07:04:28 EDT" finished-at="2023-05-26T07:04:29 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchSetup -->
+        <test-method status="PASS" signature="countProductImageTest(java.lang.String, java.lang.String, int)[pri:0, instance:com.qa.opencart.tests.SearchTest@49993335]" name="countProductImageTest" duration-ms="1929" started-at="2023-05-26T07:04:29 EDT" data-provider="getProductImagesData" finished-at="2023-05-26T07:04:31 EDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Macbook]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[MacBook Pro]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[4]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- countProductImageTest -->
+        <test-method status="FAIL" signature="countProductImageTest(java.lang.String, java.lang.String, int)[pri:0, instance:com.qa.opencart.tests.SearchTest@49993335]" name="countProductImageTest" duration-ms="10195" started-at="2023-05-26T07:04:31 EDT" data-provider="getProductImagesData" finished-at="2023-05-26T07:04:41 EDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[imac]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[iMac]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for element to be clickable: By.linkText: iMac (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.8.2', revision: '826dbfc730'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_101'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Program Files (x86)\scop...}, goog:chromeOptions: {debuggerAddress: localhost:25147}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:25147/devtoo..., se:cdpVersion: 113.0.5672.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 936f1c0f033d4bef4f3ebf5a85760746]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.linkText: iMac (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.8.2', revision: '826dbfc730'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_101'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Program Files (x86)\scop...}, goog:chromeOptions: {debuggerAddress: localhost:25147}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:25147/devtoo..., se:cdpVersion: 113.0.5672.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 936f1c0f033d4bef4f3ebf5a85760746
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+at com.qa.opencart.utils.ElementUtil.checkElementClickable(ElementUtil.java:484)
+at com.qa.opencart.utils.ElementUtil.doClick(ElementUtil.java:53)
+at com.qa.opercart.pages.SearchResultPage.selectProduct(SearchResultPage.java:33)
+at com.qa.opencart.tests.SearchTest.countProductImageTest(SearchTest.java:50)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1249)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:41)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:443)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:67)
+at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+at java.lang.Thread.run(Thread.java:745)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- countProductImageTest -->
+        <test-method status="PASS" signature="countProductImageTest(java.lang.String, java.lang.String, int)[pri:0, instance:com.qa.opencart.tests.SearchTest@49993335]" name="countProductImageTest" duration-ms="2038" started-at="2023-05-26T07:04:41 EDT" data-provider="getProductImagesData" finished-at="2023-05-26T07:04:43 EDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[samsung]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Samsung Galaxy Tab 10.1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[7]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- countProductImageTest -->
+        <test-method status="PASS" signature="countProductImageTest(java.lang.String, java.lang.String, int)[pri:0, instance:com.qa.opencart.tests.SearchTest@49993335]" name="countProductImageTest" duration-ms="1034" started-at="2023-05-26T07:04:43 EDT" data-provider="getProductImagesData" finished-at="2023-05-26T07:04:44 EDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[samsung]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Samsung SyncMaster 941BW]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- countProductImageTest -->
+        <test-method status="PASS" signature="searchPageTitleTest(java.lang.String)[pri:0, instance:com.qa.opencart.tests.SearchTest@49993335]" name="searchPageTitleTest" duration-ms="719" started-at="2023-05-26T07:04:44 EDT" data-provider="getProductSearchKey" finished-at="2023-05-26T07:04:45 EDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Macbook]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchPageTitleTest -->
+        <test-method status="PASS" signature="searchPageTitleTest(java.lang.String)[pri:0, instance:com.qa.opencart.tests.SearchTest@49993335]" name="searchPageTitleTest" duration-ms="843" started-at="2023-05-26T07:04:45 EDT" data-provider="getProductSearchKey" finished-at="2023-05-26T07:04:46 EDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[iMac]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchPageTitleTest -->
+        <test-method status="PASS" signature="searchPageTitleTest(java.lang.String)[pri:0, instance:com.qa.opencart.tests.SearchTest@49993335]" name="searchPageTitleTest" duration-ms="716" started-at="2023-05-26T07:04:46 EDT" data-provider="getProductSearchKey" finished-at="2023-05-26T07:04:46 EDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[samsung]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchPageTitleTest -->
+        <test-method status="PASS" signature="searchProductTest(java.lang.String)[pri:0, instance:com.qa.opencart.tests.SearchTest@49993335]" name="searchProductTest" duration-ms="604" started-at="2023-05-26T07:04:46 EDT" data-provider="getProductSearchKey" finished-at="2023-05-26T07:04:47 EDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Macbook]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchProductTest -->
+        <test-method status="PASS" signature="searchProductTest(java.lang.String)[pri:0, instance:com.qa.opencart.tests.SearchTest@49993335]" name="searchProductTest" duration-ms="566" started-at="2023-05-26T07:04:47 EDT" data-provider="getProductSearchKey" finished-at="2023-05-26T07:04:47 EDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[iMac]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchProductTest -->
+        <test-method status="PASS" signature="searchProductTest(java.lang.String)[pri:0, instance:com.qa.opencart.tests.SearchTest@49993335]" name="searchProductTest" duration-ms="644" started-at="2023-05-26T07:04:47 EDT" data-provider="getProductSearchKey" finished-at="2023-05-26T07:04:48 EDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[samsung]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchProductTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.opencart.tests.SearchTest@49993335]" name="tearDown" is-config="true" duration-ms="0" started-at="2023-05-26T07:04:48 EDT" finished-at="2023-05-26T07:04:48 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.opencart.tests.SearchTest -->
+    </test> <!-- SearchTest -->
+  </suite> <!-- open_cart_regression -->
+</testng-results>

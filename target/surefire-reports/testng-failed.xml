@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [open_cart_regression]" parallel="tests">
+  <test thread-count="2" verbose="0" name="SearchTest(failed)" parallel="tests">
+    <classes>
+      <class name="com.qa.opencart.tests.SearchTest">
+        <methods>
+          <include name="countProductImageTest" invocation-numbers="1"/>
+          <include name="searchSetup"/>
+          <include name="setUP"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.qa.opencart.tests.SearchTest -->
+    </classes>
+  </test> <!-- SearchTest(failed) -->
+</suite> <!-- Failed suite [open_cart_regression] -->

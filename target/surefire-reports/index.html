@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-open_cart_regression">
+              <span class="suite-name border-failed">open_cart_regression</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-open_cart_regression">
+                    <span>C:\Tools\TestingTools\selenium\Automation_Workspace\POM_OpenCart\src\main\resources\testRunners\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-open_cart_regression">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-open_cart_regression">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-open_cart_regression">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-open_cart_regression">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-open_cart_regression">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-open_cart_regression">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">10 methods, 1 failed,   9 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-open_cart_regression" class="hide-methods failed suite-open_cart_regression"> (hide)</a> <!-- hide-methods failed suite-open_cart_regression -->
+                      <a href="#" panel-name="suite-open_cart_regression" class="show-methods failed suite-open_cart_regression"> (show)</a> <!-- show-methods failed suite-open_cart_regression -->
+                    </span>
+                    <div class="method-list-content failed suite-open_cart_regression">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-open_cart_regression" title="com.qa.opencart.tests.SearchTest" hash-for-method="countProductImageTest(imac, iMac, 3)">countProductImageTest(imac, iMac, 3)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-open_cart_regression -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-open_cart_regression" class="hide-methods passed suite-open_cart_regression"> (hide)</a> <!-- hide-methods passed suite-open_cart_regression -->
+                      <a href="#" panel-name="suite-open_cart_regression" class="show-methods passed suite-open_cart_regression"> (show)</a> <!-- show-methods passed suite-open_cart_regression -->
+                    </span>
+                    <div class="method-list-content passed suite-open_cart_regression">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-open_cart_regression" title="com.qa.opencart.tests.SearchTest" hash-for-method="countProductImageTest(Macbook, MacBook Pro, 4)">countProductImageTest(Macbook, MacBook Pro, 4)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-open_cart_regression" title="com.qa.opencart.tests.SearchTest" hash-for-method="countProductImageTest(samsung, Samsung Galaxy Tab 10.1, 7)">countProductImageTest(samsung, Samsung Galaxy Tab 10.1, 7)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-open_cart_regression" title="com.qa.opencart.tests.SearchTest" hash-for-method="countProductImageTest(samsung, Samsung SyncMaster 941BW, 1)">countProductImageTest(samsung, Samsung SyncMaster 941BW, 1)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-open_cart_regression" title="com.qa.opencart.tests.SearchTest" hash-for-method="searchPageTitleTest(samsung)">searchPageTitleTest(samsung)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-open_cart_regression" title="com.qa.opencart.tests.SearchTest" hash-for-method="searchPageTitleTest(iMac)">searchPageTitleTest(iMac)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-open_cart_regression" title="com.qa.opencart.tests.SearchTest" hash-for-method="searchPageTitleTest(Macbook)">searchPageTitleTest(Macbook)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-open_cart_regression" title="com.qa.opencart.tests.SearchTest" hash-for-method="searchProductTest(iMac)">searchProductTest(iMac)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-open_cart_regression" title="com.qa.opencart.tests.SearchTest" hash-for-method="searchProductTest(samsung)">searchProductTest(samsung)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-open_cart_regression" title="com.qa.opencart.tests.SearchTest" hash-for-method="searchProductTest(Macbook)">searchProductTest(Macbook)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-open_cart_regression -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-open_cart_regression" class="panel open_cart_regression">
+          <div class="suite-open_cart_regression-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.qa.opencart.tests.SearchTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="countProductImageTest(imac, iMac, 3)">
+                  </a> <!-- countProductImageTest(imac, iMac, 3) -->
+                  <span class="method-name">countProductImageTest</span>
+                  <span class="parameters">(imac, iMac, 3)</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.linkText: iMac (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.8.2&apos;, revision: &apos;826dbfc730&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_101&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Program Files (x86)\scop...}, goog:chromeOptions: {debuggerAddress: localhost:25147}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:25147/devtoo..., se:cdpVersion: 113.0.5672.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 936f1c0f033d4bef4f3ebf5a85760746
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at com.qa.opencart.utils.ElementUtil.checkElementClickable(ElementUtil.java:484)
+	at com.qa.opencart.utils.ElementUtil.doClick(ElementUtil.java:53)
+	at com.qa.opercart.pages.SearchResultPage.selectProduct(SearchResultPage.java:33)
+	at com.qa.opencart.tests.SearchTest.countProductImageTest(SearchTest.java:50)
+	at java.util.ArrayList.forEach(ArrayList.java:1249)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 18 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-open_cart_regression-class-failed -->
+          <div class="suite-open_cart_regression-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.qa.opencart.tests.SearchTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="countProductImageTest(Macbook, MacBook Pro, 4)">
+                  </a> <!-- countProductImageTest(Macbook, MacBook Pro, 4) -->
+                  <span class="method-name">countProductImageTest</span>
+                  <span class="parameters">(Macbook, MacBook Pro, 4)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="countProductImageTest(samsung, Samsung Galaxy Tab 10.1, 7)">
+                  </a> <!-- countProductImageTest(samsung, Samsung Galaxy Tab 10.1, 7) -->
+                  <span class="method-name">countProductImageTest</span>
+                  <span class="parameters">(samsung, Samsung Galaxy Tab 10.1, 7)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="countProductImageTest(samsung, Samsung SyncMaster 941BW, 1)">
+                  </a> <!-- countProductImageTest(samsung, Samsung SyncMaster 941BW, 1) -->
+                  <span class="method-name">countProductImageTest</span>
+                  <span class="parameters">(samsung, Samsung SyncMaster 941BW, 1)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchPageTitleTest(samsung)">
+                  </a> <!-- searchPageTitleTest(samsung) -->
+                  <span class="method-name">searchPageTitleTest</span>
+                  <span class="parameters">(samsung)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchPageTitleTest(iMac)">
+                  </a> <!-- searchPageTitleTest(iMac) -->
+                  <span class="method-name">searchPageTitleTest</span>
+                  <span class="parameters">(iMac)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchPageTitleTest(Macbook)">
+                  </a> <!-- searchPageTitleTest(Macbook) -->
+                  <span class="method-name">searchPageTitleTest</span>
+                  <span class="parameters">(Macbook)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchProductTest(iMac)">
+                  </a> <!-- searchProductTest(iMac) -->
+                  <span class="method-name">searchProductTest</span>
+                  <span class="parameters">(iMac)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchProductTest(samsung)">
+                  </a> <!-- searchProductTest(samsung) -->
+                  <span class="method-name">searchProductTest</span>
+                  <span class="parameters">(samsung)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchProductTest(Macbook)">
+                  </a> <!-- searchProductTest(Macbook) -->
+                  <span class="method-name">searchProductTest</span>
+                  <span class="parameters">(Macbook)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-open_cart_regression-class-passed -->
+        </div> <!-- panel open_cart_regression -->
+        <div panel-name="test-xml-open_cart_regression" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Tools\TestingTools\selenium\Automation_Workspace\POM_OpenCart\src\main\resources\testRunners\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite thread-count=&quot;2&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot; name=&quot;open_cart_regression&quot; parallel=&quot;tests&quot;&gt;
+  &lt;test thread-count=&quot;2&quot; verbose=&quot;0&quot; name=&quot;SearchTest&quot; parallel=&quot;tests&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.qa.opencart.tests.SearchTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- SearchTest --&gt;
+&lt;/suite&gt; &lt;!-- open_cart_regression --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-open_cart_regression" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for open_cart_regression</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">SearchTest (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-open_cart_regression" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for open_cart_regression</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-open_cart_regression" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for open_cart_regression</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_open_cart_regression');
+function tableData_open_cart_regression() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(10);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'countProductImageTest')
+data.setCell(0, 2, 'com.qa.opencart.tests.SearchTest')
+data.setCell(0, 3, 10195);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'countProductImageTest')
+data.setCell(1, 2, 'com.qa.opencart.tests.SearchTest')
+data.setCell(1, 3, 2038);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'countProductImageTest')
+data.setCell(2, 2, 'com.qa.opencart.tests.SearchTest')
+data.setCell(2, 3, 1929);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'countProductImageTest')
+data.setCell(3, 2, 'com.qa.opencart.tests.SearchTest')
+data.setCell(3, 3, 1034);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'searchPageTitleTest')
+data.setCell(4, 2, 'com.qa.opencart.tests.SearchTest')
+data.setCell(4, 3, 843);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'searchPageTitleTest')
+data.setCell(5, 2, 'com.qa.opencart.tests.SearchTest')
+data.setCell(5, 3, 719);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'searchPageTitleTest')
+data.setCell(6, 2, 'com.qa.opencart.tests.SearchTest')
+data.setCell(6, 3, 716);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'searchProductTest')
+data.setCell(7, 2, 'com.qa.opencart.tests.SearchTest')
+data.setCell(7, 3, 644);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'searchProductTest')
+data.setCell(8, 2, 'com.qa.opencart.tests.SearchTest')
+data.setCell(8, 3, 604);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'searchProductTest')
+data.setCell(9, 2, 'com.qa.opencart.tests.SearchTest')
+data.setCell(9, 3, 566);
+window.suiteTableData['open_cart_regression']= { tableData: data, tableDiv: 'times-div-open_cart_regression'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 26 seconds</span>
+              <div id="times-div-open_cart_regression">
+              </div> <!-- times-div-open_cart_regression -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-open_cart_regression" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for open_cart_regression</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-open_cart_regression" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-open_cart_regression" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.opencart.tests.SearchTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setUP(Chrome)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-class before">
+                <span class="method-name">searchSetup</span>
+                <span class="method-start">6062 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">countProductImageTest(Macbook, MacBook Pro, 4)</span>
+                <span class="method-start">7185 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">countProductImageTest(imac, iMac, 3)</span>
+                <span class="method-start">9117 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">countProductImageTest(samsung, Samsung Galaxy Tab 10.1, 7)</span>
+                <span class="method-start">19323 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">countProductImageTest(samsung, Samsung SyncMaster 941BW, 1)</span>
+                <span class="method-start">21362 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">searchPageTitleTest(Macbook)</span>
+                <span class="method-start">22396 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">searchPageTitleTest(iMac)</span>
+                <span class="method-start">23116 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">searchPageTitleTest(samsung)</span>
+                <span class="method-start">23959 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">searchProductTest(Macbook)</span>
+                <span class="method-start">24675 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">searchProductTest(iMac)</span>
+                <span class="method-start">25280 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">searchProductTest(samsung)</span>
+                <span class="method-start">25846 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">26494 ms</span>
+              </div> <!-- configuration-test after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

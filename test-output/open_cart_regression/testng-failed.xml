@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" verbose="4" name="Failed suite [open_cart_regression]" parallel="tests">
+  <test thread-count="2" verbose="4" name="LoginPageTest(failed)" parallel="tests">
+    <parameter name="browser" value="mozilla"/>
+    <classes>
+      <class name="com.qa.opencart.tests.LoginPageTest">
+        <methods>
+          <include name="loginTest"/>
+          <include name="loginPageTittleTest"/>
+          <include name="setUP"/>
+          <include name="tearDown"/>
+          <include name="forgotPwdLinkExistTest"/>
+          <include name="loginPageURLTest"/>
+        </methods>
+      </class> <!-- com.qa.opencart.tests.LoginPageTest -->
+    </classes>
+  </test> <!-- LoginPageTest(failed) -->
+  <test thread-count="2" verbose="4" name="SearchTest(failed)" parallel="tests">
+    <classes>
+      <class name="com.qa.opencart.tests.SearchTest">
+        <methods>
+          <include name="countProductImageTest"/>
+          <include name="searchPageTitleTest"/>
+          <include name="searchSetup"/>
+          <include name="searchProductTest"/>
+          <include name="setUP"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.qa.opencart.tests.SearchTest -->
+    </classes>
+  </test> <!-- SearchTest(failed) -->
+</suite> <!-- Failed suite [open_cart_regression] -->
